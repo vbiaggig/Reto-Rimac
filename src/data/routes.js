@@ -1,13 +1,21 @@
 export default [{
-  title: "Inicio",
-  url: "/"
+  title: "INICIO",
+  url: "#inicio"
 },
-// {
-//   title: "ab",
-//   url: ""
-// },
-// {
-//   title: "abc",
-//   url: ""
-// }
+{
+  title: "COTIZA",
+  url: "#cotiza"
+},
+{
+  title: "¿POR QUÉ RIMAC?",
+  url: "#porquérimac"
+},
+{
+  title: "PLANES",
+  url: "#planes"
+},
+{
+  title: "¿CÓMO FUNCIONA?",
+  url: "#cómofunciona"
+}
 ];
