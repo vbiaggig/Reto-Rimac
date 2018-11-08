@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'mdbreact';
-const planName = window.localStorage.getItem('planName');
+import { Container, Row, Col, Card, CardText, CardTitle, CardImage, Input, Button } from 'mdbreact';
 
 class Quotation extends Component {
   constructor(props) {
@@ -9,7 +8,8 @@ class Quotation extends Component {
       planName: '',
       planImgTerremoto: '',
       planImgRobo: '',
-      price: 0,
+      priceMonth: 0,
+      priceYear: 0,
       coverageEDFmin: 0,
       coverageEDFmax: 0,
       coverageCONTmin: 0,
@@ -18,32 +18,37 @@ class Quotation extends Component {
   }
 
   componentDidMount() {
+    const planName = window.localStorage.getItem('planName');
+
     if (planName === 'contenido-edificacion') {
-      this.setState({ 
-        planName: 'Contenido y edificación', 
-        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-verde.png', 
-        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-verde.png', 
-        price: 55.90, 
-        coverageEDFmin: 50000, 
-        coverageEDFmax: 100000, 
+      this.setState({
+        planName: 'Contenido y edificación',
+        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-verde.png',
+        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-verde.png',
+        priceMonth: 55.90,
+        priceYear: 670.83,
+        coverageEDFmin: 50000,
+        coverageEDFmax: 100000,
         coverageCONTmin: 10000,
         coverageCONTmax: 15000
       })
     } else if (planName === 'solo-edificacion') {
-      this.setState({ 
-        planName: 'Solo edificación', 
-        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-purple.png', 
-        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-purple.png', 
-        price: 45.90, 
-        coverageEDFmin: 50000, 
+      this.setState({
+        planName: 'Solo edificación',
+        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-purple.png',
+        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-purple.png',
+        priceMonth: 45.90,
+        priceYear: 550.85,
+        coverageEDFmin: 50000,
         coverageEDFmax: 100000
       })
     } else if (planName === 'solo-contenido') {
-      this.setState({ 
-        planName: 'Solo contenido', 
-        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-amarillo.png', 
-        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-amarillo.png', 
-        price: 14.90, 
+      this.setState({
+        planName: 'Solo contenido',
+        planImgTerremoto: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/destruccion-amarillo.png',
+        planImgRobo: 'https://www.rimac.com.pe/productoweb/flujodomi2/images/robo-amarillo.png',
+        priceMonth: 14.90,
+        priceYear: 178.81,
         coverageCONTmin: 10000,
         coverageCONTmax: 60000
       })
@@ -53,51 +58,50 @@ class Quotation extends Component {
   render() {
     return (
       <div className="banner">
-        <h3>{this.state.planName}</h3>
+        <h3>¡Escogiste el plan <b>{this.state.planName}</b>! Selecciona cuanto quieres valorizar</h3>
         <Container>
           <Row>
-            <Col s6>
-              <div className="container-quotation">
-                <div className="container-img">
-                  <img className="mx-auto" alt="" src={this.state.planImgTerremoto}></img>
-                </div>
-                <h4>Terremoto</h4>
-                <p>
-                  Según tu plan recibirás cobertura contra terremoto, temblor, sismo, maremoto, oleaje, salida del mar.
-                </p>
-              </div>
-            </Col>
-            <Col s6>
-              <div className="container-quotation">
-                <div className="container-img">
-                  <img className="mx-auto" alt="" src={this.state.planImgRobo}></img>
-                </div>
-                <h4>Robo o Intento de Robo</h4>
-                <p>
-                  Según tu plan recibirás cobertura contra robo o el intento de robo bajo múltiples modalidades.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <div className="text-center">
-          <a href="javascript:void(0);">VER DETALLES</a>
-        </div>
-        <h3>Tu seguro cubrirá</h3>
-        <Container>
-          <Row>
-            {this.state.coverageEDFmin !== 0 ? (
-              <Col s={6}>
-              <h5>Edificación</h5>
-              <p>Desde {this.state.coverageEDFmin} - Hasta {this.state.coverageEDFmax}</p>
-            </Col>
-            ) : null }
-            {this.state.coverageCONTmin !== 0 ? (
-              <Col s={6}>
-              <h5>Cotenido</h5>
-              <p>Desde {this.state.coverageCONTmin} - Hasta {this.state.coverageCONTmax}</p>
-            </Col>
-            ) : null }
+            <Col md={1}></Col>
+            {
+              this.state.coverageEDFmin !== 0 ?
+                (<Col sm={6} md={5}>
+                  <Card className="card-body">
+                    <CardImage className="img-fluid" src={require("../img/house.png")} />
+                    <CardTitle>Infraestructura</CardTitle>
+                    <CardText>Ingresa un valor entre S/ {this.state.coverageEDFmin} hasta S/ {this.state.coverageEDFmax}</CardText>
+                    <CardText>
+                      <Input label="Monto" min={this.state.coverageEDFmin} max={this.state.coverageEDFmax} />
+                    </CardText>
+                  </Card>
+                </Col>) : null}
+            {
+              this.state.coverageCONTmin !== 0 ?
+                (<Col sm={6}  md={5}>
+                  <Card className="card-body">
+                    <CardImage className="img-fluid" src={require("../img/sofa.png")} />
+                    <CardTitle>Bienes de mi hogar</CardTitle>
+                    <CardText>Ingresa un valor entre S/ {this.state.coverageCONTmin} hasta S/ {this.state.coverageCONTmax}</CardText>
+                    <CardText>
+                      <Input label="Monto" min={this.state.coverageCONTmin} max={this.state.coverageCONTmax} />
+                    </CardText>
+                  </Card>
+                </Col>) : null
+            }
+            <Row className="price-container mt-4">
+              <Col sm={12}>
+                <p><span className="month-price">S/ {this.state.priceMonth}</span> mensual</p>
+                <p>al contado S/ {this.state.priceYear} anual</p>
+              </Col>
+              <Col sm={12}>
+                <Button className="btn-buy">COMPRARLO</Button>
+              </Col>
+              <Col sm={12}>
+                <Button outline className="btn-assesor">SOLICITAR ASESOR</Button>
+              </Col>
+              <Col sm={12}>
+                <a>Ver los términos y condiciones del seguro</a>
+              </Col>
+            </Row>
           </Row>
         </Container>
       </div>

@@ -117,6 +117,32 @@ $break-xlarge: 1200px;
     .banner{
       padding: 1rem;
       margin: 1rem !important;
+      .card{
+        text-align: center;
+      }
+      p{
+        font-size: 1.1rem;
+      }
+      .card-text{
+        width: 50%;
+        margin: .5rem auto;
+      }
+    }
+    .price-container{
+      text-align: center;
+      width: 100%;
+      .month-price{
+        color: #84bd00;
+        font-weight: bolder;
+        font-size: 3rem;
+      }
+      .btn-buy{
+        background-color: #84bd00 !important;
+      }
+      .btn-outline-default{
+        border: 2px solid #84bd00 !important;
+        color: #84bd00 !important;
+      }
     }
   }
 
