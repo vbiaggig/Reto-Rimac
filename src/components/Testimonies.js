@@ -9,8 +9,7 @@ class Testimonies extends Component {
       <div className="view-height" id="testimonios">
         <Container className="text-center">
           <div className="pt-5">
-            <h2 className="title">Exclusiones</h2>
-            <p>Para mayor información sobre las exclusiones del seguro Domiciliario, revisar el articulo 2 y 3 del condicionado general, que lo encontrara en el link Documentos del Seguro Domiciliario.</p>
+            <h2 className="title">Testimonios</h2>
           </div>
           <InfiniteCarousel
             breakpoints={[
