@@ -1,21 +1,25 @@
 export default [{
   title: "INICIO",
-  url: "#inicio"
+  url: "/#inicio"
 },
 {
   title: "¿POR QUÉ RIMAC?",
-  url: "#porquérimac"
+  url: "/#porquérimac"
 },
 {
   title: "COBERTURA",
-  url: "#cobertura"
+  url: "/#cobertura"
 },
 {
   title: "EXCLUSIONES",
-  url: "#exclusiones"
+  url: "/#exclusiones"
 },
 {
   title: "PLANES",
-  url: "#planes"
+  url: "/#planes"
+},
+{
+  title: "TESTIMONIOS",
+  url: "/#testimonios"
 }
 ];

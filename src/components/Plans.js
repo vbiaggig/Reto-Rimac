@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col, Card, CardBody, CardHeader, CardText, CardFooter } from 'mdbreact';
+import { Container, Button, Row, Col, Card, CardBody, CardHeader, CardText, CardFooter, CardImage } from 'mdbreact';
 import { Link } from "react-router-dom";
 
 class Plans extends Component {
@@ -15,51 +15,44 @@ class Plans extends Component {
             <Col sm={4}>
               <div className="container-card">
                 <Card style={{ marginTop: '1rem' }} className="text-center">
-                  <CardHeader tag="h3">Solo Contenido</CardHeader>
+                  <CardHeader className="card-header" tag="h3" className="background-img">Plan Contenido</CardHeader>
                   <CardBody>
-                    <img src="https://www.rimac.com.pe/productoweb/flujodomi2/images/solo-contenido.png" alt="solo-contenido" />
-
-                    {/* <CardTitle>Solo Contenido</CardTitle> */}
+                  <CardText>Desde <span className="price-buy">S/ 14.90</span> al mes</CardText>
                     <CardText>Asegura únicamente el Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button name="solo-contenido" onClick={this._handleClick}><Link name="solo-contenido" className="text-white" to="/Cotizacion">Elegir</Link></Button>
+                      <Button name="solo-contenido" onClick={this._handleClick}><Link name="solo-contenido" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
-                  <CardFooter className="bg-orange">Desde S/ 14.90 al mes</CardFooter>
-
                 </Card>
               </div>
             </Col>
             <Col sm={4}>
               <div className="container-card">
                 <Card style={{ marginTop: '1rem' }} className="text-center">
-                  <CardHeader tag="h3">Solo Edificación</CardHeader>
+                  <CardHeader className="card-header" tag="h3">Plan Edificación</CardHeader>
                   <CardBody>
-                    <img src="https://www.rimac.com.pe/productoweb/flujodomi2/images/solo-edificacion.png" alt="solo-edificacion" />
-
-                    {/* <CardTitle>Solo Edificación</CardTitle> */}
-                    <CardText>Asegura únicamente la Edificación de tu inmueble según el plan y cobertura que elijas.</CardText>
+                  <CardText>Desde <span className="price-buy">S/ 45.90</span> al mes</CardText>
+                    <CardText>
+                      Asegura únicamente la Edificación de tu inmueble según el plan y cobertura que elijas.
+                    </CardText>
                     <div className="container-btn">
-                      <Button name="solo-edificacion" onClick={this._handleClick}><Link name="solo-edificacion" className="text-white" to="/Cotizacion">Elegir</Link></Button>
+                      <Button name="solo-edificacion" onClick={this._handleClick}><Link name="solo-edificacion" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
-                  <CardFooter className="bg-orange">Desde S/ 45.90 al mes</CardFooter>
                 </Card>
               </div>
             </Col>
             <Col sm={4}>
               <div className="container-card">
                 <Card style={{ marginTop: '1rem' }} className="text-center">
-                  <CardHeader tag="h3">Edificación y Contenido</CardHeader>
+                  <CardHeader className="card-header" tag="h3">Plan Edificación y Contenido</CardHeader>
                   <CardBody>
-                    <img src="https://www.rimac.com.pe/productoweb/flujodomi2/images/contenido-edificacion.png" alt="contenido-edificacion" />
-                    {/* <CardTitle>Edificación y Contenido</CardTitle> */}
+                    <CardText>Desde <span className="price-buy">S/ 55.90</span> al mes</CardText>
                     <CardText>Asegura la Edificación y Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button name="contenido-edificacion" onClick={this._handleClick}><Link name="contenido-edificacion" className="text-white" to="/Cotizacion">Elegir</Link></Button>
+                      <Button name="contenido-edificacion" onClick={this._handleClick}><Link name="contenido-edificacion" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
-                  <CardFooter className="bg-orange">Desde S/ 55.90 al mes</CardFooter>
                 </Card>
               </div>
             </Col>
