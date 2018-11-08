@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Header from './components/header/Header';
-import Content from './components/content/Content';
+import Header from './components/Header';
+import Content from './components/Content';
 import items from './data/routes';
-import FormCotizar from './components/FormCotizar';
 
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
