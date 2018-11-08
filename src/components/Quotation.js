@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardText, CardTitle, CardImage, Input, Button } from 'mdbreact';
+import { Link } from "react-router-dom";
 
 class Quotation extends Component {
   constructor(props) {
@@ -93,7 +94,7 @@ class Quotation extends Component {
                 <p>al contado S/ {this.state.priceYear} anual</p>
               </Col>
               <Col sm={12}>
-                <Button className="btn-buy">COMPRARLO</Button>
+                <Button className="btn-buy"><Link className="text-white" to="/Reto-Rimac/Venta">COMPRARLO</Link></Button>
               </Col>
               <Col sm={12}>
                 <Button outline className="btn-assesor">SOLICITAR ASESOR</Button>

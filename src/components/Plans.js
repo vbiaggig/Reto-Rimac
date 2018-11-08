@@ -20,7 +20,7 @@ class Plans extends Component {
                   <CardText>Desde <span className="price-buy">S/ 14.90</span> al mes</CardText>
                     <CardText>Asegura únicamente el Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button name="solo-contenido" onClick={this._handleClick}><Link name="solo-contenido" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
+                      <Button name="solo-contenido" onClick={this._handleClick}><Link name="solo-contenido" className="text-white" to="/Reto-Rimac/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
                 </Card>
@@ -36,7 +36,7 @@ class Plans extends Component {
                       Asegura únicamente la Edificación de tu inmueble según el plan y cobertura que elijas.
                     </CardText>
                     <div className="container-btn">
-                      <Button name="solo-edificacion" onClick={this._handleClick}><Link name="solo-edificacion" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
+                      <Button name="solo-edificacion" onClick={this._handleClick}><Link name="solo-edificacion" className="text-white" to="/Reto-Rimac/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
                 </Card>
@@ -50,7 +50,7 @@ class Plans extends Component {
                     <CardText>Desde <span className="price-buy">S/ 55.90</span> al mes</CardText>
                     <CardText>Asegura la Edificación y Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button name="contenido-edificacion" onClick={this._handleClick}><Link name="contenido-edificacion" className="text-white" to="/Cotizacion">Cotizar</Link></Button>
+                      <Button name="contenido-edificacion" onClick={this._handleClick}><Link name="contenido-edificacion" className="text-white" to="/Reto-Rimac/Cotizacion">Cotizar</Link></Button>
                     </div>
                   </CardBody>
                 </Card>

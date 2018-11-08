@@ -160,6 +160,34 @@ $break-xlarge: 1200px;
       color: #84bd00;
       font-size: 2rem;
     }
+    .row .FormClient {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+ 
+    .container .md-form {
+      position: relative;
+       margin: 0px;
+   }
+ 
+   .form-control{
+      margin: 40px 0px;
+   }
+ 
+   .md-form .validate {
+      margin: 15px 0px;
+   }
+   .stepper{
+     margin-top: 50px;
+   }
+   .card{
+     margin-top: 20px;
+   }
+    .col{
+     margin: 0 !important;
+   }
     .testimonies.card{
       width: 100%;
     }
@@ -188,6 +216,9 @@ $break-xlarge: 1200px;
     }
     .card-text{
       font-size: 1rem !important;
+    }
+    .stepper{
+      margin-top: 74px;
     }
   }
 

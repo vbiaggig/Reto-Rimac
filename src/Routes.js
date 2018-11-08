@@ -13,10 +13,10 @@ const AppRoutes = () => (
   <App>
     <Switch>
       {/* <Route exact path="/profile" component={ab} /> */}
-      <Route exact path="/" component={Landing} />
-      <Route exact path="/Cotizacion" component={Quotation} />
-      <Route exact path="/Venta" component={StepperPage} />
-      <Route exact path="/VentaTarjeta" component={FormVenta} />
+      <Route exact path="/Reto-Rimac/" component={Landing} />
+      <Route exact path="/Reto-Rimac/Cotizacion" component={Quotation} />
+      <Route exact path="/Reto-Rimac/Venta" component={StepperPage} />
+      <Route exact path="/Reto-Rimac/VentaTarjeta" component={FormVenta} />
       <Route component={Page404} />
     </Switch>
   </App>

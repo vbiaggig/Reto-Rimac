@@ -1,25 +1,25 @@
 export default [{
   title: "INICIO",
-  url: "/#inicio"
+  url: "/Reto-Rimac/#inicio"
 },
 {
   title: "¿POR QUÉ RIMAC?",
-  url: "/#porquérimac"
+  url: "/Reto-Rimac/#porquérimac"
 },
 {
   title: "COBERTURA",
-  url: "/#cobertura"
+  url: "/Reto-Rimac/#cobertura"
 },
 {
   title: "EXCLUSIONES",
-  url: "/#exclusiones"
+  url: "/Reto-Rimac/#exclusiones"
 },
 {
   title: "PLANES",
-  url: "/#planes"
+  url: "/Reto-Rimac/#planes"
 },
 {
   title: "TESTIMONIOS",
-  url: "/#testimonios"
+  url: "/Reto-Rimac/#testimonios"
 }
 ];
