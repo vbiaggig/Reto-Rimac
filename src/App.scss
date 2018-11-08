@@ -1,37 +1,133 @@
-body{
-  background-color: #f6f4f2 !important;
-}
-.header{
-  .navbar{
-    background: #ED1C22
-  }
-  img{
-    height: 1.2rem;
-  }
-}
-.view-height-bg {
-  height: calc(100vh - 60px);
-  background: url('https://www.rimac.com.pe/img/bg-inner-products.png');
-}
-.view-height {
-  height: calc(100vh);
-}
-.title{
-  font-size: 1.5rem;
-}
-.subtitle{
-  font-size: 2rem;
-}
+$break-xsmall: 320px;
+$break-small: 576px;
+$break-mediun: 768px;
+$break-large: 992px;
+$break-xlarge: 1200px;
 
-.container-img{
-  img{
-    margin: 2rem 0;
-    width: 100%;
+  @media (min-width: #{$break-xsmall}) {
+    body{
+      background-color: #f6f4f2 !important;
+    }
+    .header{
+      img{
+        height: 1.2rem;
+      }
+    }
+    .view-height-bg {
+      height: calc(100vh - 60px);
+      background: url('https://www.rimac.com.pe/img/bg-inner-products.png');
+    }
+    .view-auto {
+      height: 100%;
+      padding-bottom: 5rem;
+    }
+    .index{
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+    .title{
+      font-size: 1.5rem;
+    }
+    .subtitle{
+      font-size: 2rem;
+    }
+    
+    .container-img{
+      img{
+        margin: 2rem 0;
+        width: 100%;
+      }
+    }
+    
+    .container-btn{
+      .btn-default{
+        background-color: #84bd00 !important;
+        border-radius: 1.5rem;
+      }
+    }
+    
+    .Ripple-parent{
+      img{
+        margin: .5rem auto;
+      }
+    }
+    .bg-rimac{
+      background: #ED1C22
+    }
+    .radius{
+      // border-radius: 50%; 
+      padding: 0 !important;
+      width: 2rem;
+      height: 2rem;
+      i{
+        font-size: 1.6rem !important;
+        padding: .3rem;
+      }
+    }
+    .container-btn-footer{
+      text-align: center;
+    }
+    .bg-orange{
+      background: #ED1C22 !important;
+      color: #fff !important;
+    }
+    .card-cascade{
+      background: transparent !important;
+      height: 100%;
+    }
+    .container-card{
+      .card{
+        height: 100%;
+      }
+      height: 100%;
+      margin: 1rem;
+    }
+    .benefit{
+      padding: 1rem;
+      .card{
+        padding: 1rem;
+        background: transparent;
+      }
+      .benefit-img{
+        width: 4.2rem
+      }
+      .benefit-text{
+        h4{
+          font-weight: bolder;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+    ._2Nde-b7zBqxE2c-pX-RLQr{
+      height: 320px;
+    }
   }
-}
 
-.container-btn{
-  .btn-default{
-  background-color: #84bd00 !important;
+
+  @media (min-width: #{$break-large}) {
+    body{
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .header{
+      img{
+        height: 1.5rem;
+      }
+    }
+    .index{
+      font-size: 1.5rem;
+    }
+    .title{
+      font-size: 2.5rem;
+    }
+    .subtitle{
+      font-size: 3rem;
+    }
+    .card-text{
+      font-size: 1rem !important;
+    }
   }
-}
+

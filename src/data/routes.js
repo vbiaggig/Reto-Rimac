@@ -3,19 +3,19 @@ export default [{
   url: "#inicio"
 },
 {
-  title: "COTIZA",
-  url: "#cotiza"
-},
-{
   title: "¿POR QUÉ RIMAC?",
   url: "#porquérimac"
 },
 {
-  title: "PLANES",
-  url: "#planes"
+  title: "COBERTURA",
+  url: "#cobertura"
 },
 {
-  title: "¿CÓMO FUNCIONA?",
-  url: "#cómofunciona"
+  title: "EXCLUSIONES",
+  url: "#exclusiones"
+},
+{
+  title: "PLANES",
+  url: "#planes"
 }
 ];
