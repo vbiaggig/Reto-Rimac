@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Stepper from 'react-stepper-horizontal';
 import FormVenta from './FormVenta.js';
 import FormClient from './FormClient.js';
+import FormHome from './FormHome.js';
 
 class StepperPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       currentStep: 0,
       steps: [{
@@ -63,13 +64,14 @@ class StepperPage extends Component {
     const buttonStyle = { background: '#E0E0E0', width: 200, padding: 16, textAlign: 'center', margin: '0 auto', marginTop: 32 };
 
     return (
-      <div>
+      <div className='stepper'>
         <Stepper steps={ steps } activeStep={ currentStep } />
         { this.state.currentStep === 0  &&
-            (<FormVenta/>)}
+            (<FormClient onClickNext={this.onClickNext}/>)}
         { this.state.currentStep === 1  &&
-            (<FormClient/>)}
-        <div style={ buttonStyle } onClick={ this.onClickNext }>Next</div>
+            (<FormHome onClickNext={this.onClickNext}/>)}
+              { this.state.currentStep === 2  &&
+            (<FormVenta/>)}
       </div>
     );
   }

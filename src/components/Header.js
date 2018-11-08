@@ -22,7 +22,7 @@ class Header extends Component {
 
     return (
       <div className="header">
-        <Navbar className="bg-rimac" dark expand="md" scrolling>
+        <Navbar className="bg-rimac fixed-top" dark expand="md" scrolling>
           <Container>
             <NavbarBrand href="/">
               <img src="https://www.rimac.com.pe/assets/vehicular/images/logo-rimac.png" alt="Rimac" />
