@@ -18,6 +18,7 @@ class Coverage extends Component {
                 <CardImage cascade className="img-fluid mt-4" src={require("../img/building.png")} />
                 <CardBody cascade>
                   <CardTitle>Incendios</CardTitle>
+                  <CardText>¿Sabías qué?</CardText>
                   <CardText><span className="index">63%</span> de las viviendas sufren un incendio repentino</CardText>
                   <CardText>¿Qué cubrimos?</CardText>
                   <CardText>Nos encargamos de pagar el daño al contenido a causa de incendio + daños por agua/humo + explosión + lluvia + inundación + otras coberturas no excluidas..</CardText>
@@ -29,6 +30,7 @@ class Coverage extends Component {
                 <CardImage cascade className="img-fluid mt-4" src={require("../img/earthquake.png")} />
                 <CardBody cascade>
                   <CardTitle>Terremoto</CardTitle>
+                  <CardText>¿Sabías qué?</CardText>
                   <CardText><span className="index">71%</span> de las viviendas se destruyen en terremotos</CardText>
                   <CardText>¿Qué cubrimos?</CardText>
                   <CardText>Asumimos el valor de la recontrucción de tu hogar a causa de terremoto, temblor, maremoto.</CardText>
@@ -40,6 +42,7 @@ class Coverage extends Component {
                 <CardImage cascade className="img-fluid mt-4" src={require("../img/robbery.png")} />
                 <CardBody cascade>
                   <CardTitle>Robos</CardTitle>
+                  <CardText>¿Sabías qué?</CardText>
                   <CardText><span className="index">45%</span> de las viviendas son robadas en el verano</CardText>
                   <CardText>¿Qué cubrimos?</CardText>
                   <CardText>Protegemos tu hogar a causa de robo o intento de robo solo bajo las modalidades de asalto, fractura, ganzua, escalamiento.</CardText>

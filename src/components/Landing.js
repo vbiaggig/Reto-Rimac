@@ -4,6 +4,7 @@ import Why from './Why';
 import Coverage from './Coverage';
 import Exclusions from './Exclusions';
 import Plans from './Plans';
+import Testimonies from './Testimonies';
 import Footer from './Footer';
 
 class Landing extends Component {
@@ -15,6 +16,7 @@ class Landing extends Component {
         <Coverage />
         <Exclusions />
         <Plans />
+        <Testimonies />
         <Footer />
       </div>
     );
