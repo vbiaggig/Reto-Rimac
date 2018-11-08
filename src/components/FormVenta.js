@@ -67,7 +67,7 @@ class FormVenta extends Component {
                 <Input label="Cod. Seguridad:" group type="text" validate error="wrong" success="right" />
               </div>
               <div className="text-center py-4 mt-3">
-                <Button color="cyan" type="button"><Link className="text-white" to="/Reto-Rimac/Successful">Comprar</Link></Button>
+                <Button color="cyan" type="button"><Link className="text-white" to="/Reto-Rimac/Completado">Comprar</Link></Button>
               </div>
             </form>
             </Col>
