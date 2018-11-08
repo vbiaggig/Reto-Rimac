@@ -62,10 +62,9 @@ class Quotation extends Component {
         <h3>¡Escogiste el plan <b>{this.state.planName}</b>! Selecciona cuanto quieres valorizar</h3>
         <Container>
           <Row>
-            <Col md={1}></Col>
             {
               this.state.coverageEDFmin !== 0 ?
-                (<Col sm={6} md={5}>
+                (<Col sm={6} md={5} className="mx-auto">
                   <Card className="card-body">
                     <CardImage className="img-fluid" src={require("../img/house.png")} />
                     <CardTitle>Infraestructura</CardTitle>
@@ -77,7 +76,7 @@ class Quotation extends Component {
                 </Col>) : null}
             {
               this.state.coverageCONTmin !== 0 ?
-                (<Col sm={6}  md={5}>
+                (<Col sm={6}  md={5} className="mx-auto">
                   <Card className="card-body">
                     <CardImage className="img-fluid" src={require("../img/sofa.png")} />
                     <CardTitle>Bienes de mi hogar</CardTitle>
