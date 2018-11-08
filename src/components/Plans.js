@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col, Card, CardBody, CardHeader, CardText, CardFooter, CardImage } from 'mdbreact';
+import { Container, Button, Row, Col, Card, CardBody, CardHeader, CardText } from 'mdbreact';
 import { Link } from "react-router-dom";
 
 class Plans extends Component {
@@ -15,7 +15,7 @@ class Plans extends Component {
             <Col sm={4}>
               <div className="container-card">
                 <Card style={{ marginTop: '1rem' }} className="text-center">
-                  <CardHeader className="card-header" tag="h3" className="background-img">Plan Contenido</CardHeader>
+                  <CardHeader className="card-header background-img" tag="h3" >Plan Contenido</CardHeader>
                   <CardBody>
                   <CardText>Desde <span className="price-buy">S/ 14.90</span> al mes</CardText>
                     <CardText>Asegura únicamente el Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'mdbreact';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Card, CardBody, CardTitle, CardText } from 'mdbreact';
 import InfiniteCarousel from 'react-leaf-carousel';
 
 
 class Testimonies extends Component {
   render() {
     return (
-      <div className="view-height-bg" id="inicio">
+      <div className="view-height" id="testimonios">
         <InfiniteCarousel
           breakpoints={[
             {
@@ -33,14 +32,26 @@ class Testimonies extends Component {
           slidesToShow={1}
           scrollOnDevice={true}
         >
-          <Card>
-
+          <Card className="testimonies-card" style={{ marginTop: '1rem' }}>
+            <CardBody>
+              <CardTitle>Valeria Biaggi</CardTitle>
+              <CardTitle tag="h6" sub className="mb-2 text-muted">Noviembre 2018</CardTitle>
+              <CardText>El mejor producto que ha existido.</CardText>
+            </CardBody>
           </Card>
-          <Card>
-
+          <Card className="testimonies-card" style={{ marginTop: '1rem' }}>
+            <CardBody>
+              <CardTitle>Gaby Marapi</CardTitle>
+              <CardTitle tag="h6" sub className="mb-2 text-muted">Marzo 2018</CardTitle>
+              <CardText>Some quick example text to build on the panel title and make up the bulk of the panel's content. </CardText>
+            </CardBody>
           </Card>
-          <Card>
-            
+          <Card className="testimonies-card" style={{ marginTop: '1rem' }}>
+            <CardBody>
+              <CardTitle>Virginia Contreras</CardTitle>
+              <CardTitle tag="h6" sub className="mb-2 text-muted">Julio 2018</CardTitle>
+              <CardText>Some quick example text to build on the panel title and make up the bulk of the panel's content. </CardText>
+            </CardBody>
           </Card>
 
         </InfiniteCarousel>

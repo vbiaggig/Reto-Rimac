@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Container } from 'mdbreact';
-import CarouselContainer from './CarouselContainer'
-import benefits from '../data/benefits'
+import { Container } from 'mdbreact';
+import benefits from '../data/benefits';
 import InfiniteCarousel from 'react-leaf-carousel';
-import ItemCarousel from './ItemCarousel'
+import ItemCarousel from './ItemCarousel';
 
 class Why extends Component {
   render() {
