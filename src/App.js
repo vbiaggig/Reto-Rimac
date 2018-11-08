@@ -16,7 +16,6 @@ class App extends Component {
       <div className="App">
           <Header props={this.props} items={items}/>
           <Content body={children} />
-          <FormCotizar/>
       </div>
     );
   }

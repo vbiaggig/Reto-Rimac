@@ -30,7 +30,7 @@ class Header extends Component {
             </NavbarBrand>
             <NavbarToggler onClick={this.onClick} />
             <Collapse isOpen={this.state.collapse} navbar>
-              <NavbarNav left>
+              <NavbarNav right>
                 {items && items.map((item, key) =>
                   <NavItem key={`navmobile${key}`} name={item.title}><NavLink to={item.url}>{item.title}</NavLink></NavItem>
                 )}
