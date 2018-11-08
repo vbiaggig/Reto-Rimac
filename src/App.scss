@@ -1,3 +1,6 @@
+body{
+  background-color: #f6f4f2 !important;
+}
 .header{
   .navbar{
     background: #ED1C22
@@ -7,9 +10,28 @@
   }
 }
 .view-height-bg {
-  height: calc(100vh - 64px);
-  background: url('https://www.rimac.com.pe/img/bg-inner-products.png')
+  height: calc(100vh - 60px);
+  background: url('https://www.rimac.com.pe/img/bg-inner-products.png');
 }
 .view-height {
   height: calc(100vh);
+}
+.title{
+  font-size: 1.5rem;
+}
+.subtitle{
+  font-size: 2rem;
+}
+
+.container-img{
+  img{
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.container-btn{
+  .btn-default{
+  background-color: #84bd00 !important;
+  }
 }
