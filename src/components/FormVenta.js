@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Button, Table, TableBody, TableHead, Card, CardBody, Input} from 'mdbreact';
+import {Container, Row, Col, Button, Table, TableBody, Input} from 'mdbreact';
+import { Link } from "react-router-dom";
 
 class FormVenta extends Component {
   
@@ -66,7 +67,7 @@ class FormVenta extends Component {
                 <Input label="Cod. Seguridad:" group type="text" validate error="wrong" success="right" />
               </div>
               <div className="text-center py-4 mt-3">
-                <Button color="cyan" type="submit">Comprar</Button>
+                <Button color="cyan" type="button"><Link className="text-white" to="/Reto-Rimac/Successful">Comprar</Link></Button>
               </div>
             </form>
             </Col>

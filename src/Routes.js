@@ -8,6 +8,7 @@ import Page404 from "./components/Page404";
 import Quotation from "./components/Quotation";
 import StepperPage from "./components/StepperPage";
 import FormVenta from "./components/FormVenta";
+import Successful from "./components/Successful";
 
 const AppRoutes = () => (
   <App>
@@ -17,6 +18,7 @@ const AppRoutes = () => (
       <Route exact path="/Reto-Rimac/Cotizacion" component={Quotation} />
       <Route exact path="/Reto-Rimac/Venta" component={StepperPage} />
       <Route exact path="/Reto-Rimac/VentaTarjeta" component={FormVenta} />
+      <Route exact path="/Reto-Rimac/Completado" component={Successful} />
       <Route component={Page404} />
     </Switch>
   </App>
