@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'mdbreact';
+import { Card} from 'mdbreact';
 
 
 class ItemCarousel extends Component {
