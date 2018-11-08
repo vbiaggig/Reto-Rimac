@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col, Card, CardBody, CardHeader, CardText, CardFooter } from 'mdbreact';
+import { Link } from "react-router-dom";
 
 class Plans extends Component {
   render() {
@@ -21,7 +22,7 @@ class Plans extends Component {
                     {/* <CardTitle>Solo Contenido</CardTitle> */}
                     <CardText>Asegura únicamente el Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button>Elegir</Button>
+                      <Button name="solo-contenido" onClick={this._handleClick}><Link name="solo-contenido" className="text-white" to="/Cotizacion">Elegir</Link></Button>
                     </div>
                   </CardBody>
                   <CardFooter className="bg-orange">Desde S/ 14.90 al mes</CardFooter>
@@ -39,7 +40,7 @@ class Plans extends Component {
                     {/* <CardTitle>Solo Edificación</CardTitle> */}
                     <CardText>Asegura únicamente la Edificación de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button>Elegir</Button>
+                      <Button name="solo-edificacion" onClick={this._handleClick}><Link name="solo-edificacion" className="text-white" to="/Cotizacion">Elegir</Link></Button>
                     </div>
                   </CardBody>
                   <CardFooter className="bg-orange">Desde S/ 45.90 al mes</CardFooter>
@@ -55,7 +56,7 @@ class Plans extends Component {
                     {/* <CardTitle>Edificación y Contenido</CardTitle> */}
                     <CardText>Asegura la Edificación y Contenido de tu inmueble según el plan y cobertura que elijas.</CardText>
                     <div className="container-btn">
-                      <Button>Elegir</Button>
+                      <Button name="contenido-edificacion" onClick={this._handleClick}><Link name="contenido-edificacion" className="text-white" to="/Cotizacion">Elegir</Link></Button>
                     </div>
                   </CardBody>
                   <CardFooter className="bg-orange">Desde S/ 55.90 al mes</CardFooter>
@@ -66,6 +67,10 @@ class Plans extends Component {
         </Container>
       </div>
     );
+  }
+
+  _handleClick = (e) => {
+    window.localStorage.setItem('planName', e.target.name)
   }
 }
 

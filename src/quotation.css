@@ -1,0 +1,33 @@
+.banner {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(237, 237, 237);
+  border-image: initial;
+  background: rgb(255, 255, 255) !important;
+  box-sizing: border-box;
+  box-shadow: rgba(59, 69, 74, 0.12) -10px 23px 21px 0px;
+  margin: 0px auto 100px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.banner h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.banner a {
+  opacity: 0.6;
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.facturation h4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}

@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import AppRoutes from './Routes'
 import './index.css';
+import './quotation.css';
 import * as serviceWorker from './serviceWorker';
 
 render(
