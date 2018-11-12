@@ -13,7 +13,7 @@ import Successful from "./components/Successful";
 const AppRoutes = () => (
   <App>
     <Switch>
-      {/* <Route exact path="/profile" component={ab} /> */}
+      <Route exact path="/" component={Landing} />
       <Route exact path="/Reto-Rimac/" component={Landing} />
       <Route exact path="/Reto-Rimac/Cotizacion" component={Quotation} />
       <Route exact path="/Reto-Rimac/Venta" component={StepperPage} />
