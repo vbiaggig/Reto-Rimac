@@ -116,12 +116,12 @@ self.__precacheManifest = [
     "url": "/Reto-Rimac/static/media/Roboto-Thin.94998475.ttf"
   },
   {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/Reto-Rimac/static/media/Roboto-Regular.df7b648c.ttf"
-  },
-  {
     "revision": "894a2ede85a483bf9bedefd4db45cdb9",
     "url": "/Reto-Rimac/static/media/Roboto-Medium.894a2ede.ttf"
+  },
+  {
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/Reto-Rimac/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "24210f50ee0aae9c06b2",
