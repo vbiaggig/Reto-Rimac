@@ -93,10 +93,10 @@ class Quotation extends Component {
                 <p>al contado S/ {this.state.priceYear} anual</p>
               </Col>
               <Col sm={12}>
-                <Button className="btn-buy"><Link className="text-white" to="/Reto-Rimac/Venta">COMPRARLO</Link></Button>
+                <Link className="text-white btn btn-buy" to="/Reto-Rimac/Venta">COMPRARLO</Link>
               </Col>
               <Col sm={12}>
-                <Button outline className="btn-assesor">SOLICITAR ASESOR</Button>
+                <Button outline className="btn btn-assesor">SOLICITAR ASESOR</Button>
               </Col>
               <Col sm={12}>
                 <a>Ver los términos y condiciones del seguro</a>
