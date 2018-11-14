@@ -1,6 +1,6 @@
 # Reto-Rimac
 
-# Demo [web](https://vbiaggi10.github.io/Reto-Rimac/)
+## Demo [web](https://vbiaggi10.github.io/Reto-Rimac/)
 
 ## Demo en [figma](https://www.figma.com/proto/TT7ETbj6vVdlEVOEB4UgcXDJ/R%C3%ADmac-mobile?node-id=0%3A1&scaling=scale-down)
 
