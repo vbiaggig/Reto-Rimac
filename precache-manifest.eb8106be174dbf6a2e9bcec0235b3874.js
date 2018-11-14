@@ -4,36 +4,36 @@ self.__precacheManifest = [
     "url": "/Reto-Rimac/static/media/Roboto-Bold.ecdd509c.eot"
   },
   {
-    "revision": "96aa72efab2f61ed1945",
-    "url": "/Reto-Rimac/static/css/main.81c160d7.chunk.css"
+    "revision": "9e6e42230931716c71fe",
+    "url": "/Reto-Rimac/static/css/main.47139549.chunk.css"
   },
   {
     "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
     "url": "/Reto-Rimac/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
-    "revision": "24210f50ee0aae9c06b2",
-    "url": "/Reto-Rimac/static/js/1.24210f50.chunk.js"
+    "revision": "f156458155aad63da12e",
+    "url": "/Reto-Rimac/static/js/1.f1564581.chunk.js"
   },
   {
     "revision": "10ba34d3451ce140bbac",
     "url": "/Reto-Rimac/static/js/runtime~main.10ba34d3.js"
   },
   {
-    "revision": "af7ae505a9eed503f8b8e6982036873e",
-    "url": "/Reto-Rimac/static/media/fontawesome-webfont.af7ae505.woff2"
-  },
-  {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/Reto-Rimac/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/Reto-Rimac/static/media/fontawesome-webfont.674f50d2.eot"
+    "revision": "af7ae505a9eed503f8b8e6982036873e",
+    "url": "/Reto-Rimac/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/Reto-Rimac/static/media/fontawesome-webfont.b06871f2.ttf"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/Reto-Rimac/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/Reto-Rimac/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
-    "revision": "96aa72efab2f61ed1945",
-    "url": "/Reto-Rimac/static/js/main.96aa72ef.chunk.js"
+    "revision": "9e6e42230931716c71fe",
+    "url": "/Reto-Rimac/static/js/main.9e6e4223.chunk.js"
   },
   {
     "revision": "954bbdeb86483e4ffea00c4591530ece",
@@ -108,27 +108,27 @@ self.__precacheManifest = [
     "url": "/Reto-Rimac/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
-    "revision": "46e48ce0628835f68a7369d0254e4283",
-    "url": "/Reto-Rimac/static/media/Roboto-Light.46e48ce0.ttf"
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/Reto-Rimac/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "94998475f6aea65f558494802416c1cf",
     "url": "/Reto-Rimac/static/media/Roboto-Thin.94998475.ttf"
   },
   {
+    "revision": "46e48ce0628835f68a7369d0254e4283",
+    "url": "/Reto-Rimac/static/media/Roboto-Light.46e48ce0.ttf"
+  },
+  {
     "revision": "894a2ede85a483bf9bedefd4db45cdb9",
     "url": "/Reto-Rimac/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/Reto-Rimac/static/media/Roboto-Regular.df7b648c.ttf"
+    "revision": "f156458155aad63da12e",
+    "url": "/Reto-Rimac/static/css/1.8c5e1a55.chunk.css"
   },
   {
-    "revision": "24210f50ee0aae9c06b2",
-    "url": "/Reto-Rimac/static/css/1.76251f42.chunk.css"
-  },
-  {
-    "revision": "9f52fcf5afa4d9cf15c18ab40b3aa258",
+    "revision": "f51549aed110c6d2041b041f917b338b",
     "url": "/Reto-Rimac/index.html"
   }
 ];
